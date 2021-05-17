@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
     public float Velocidade = 2;
     public bool Pulo;
+    public float forçaDoPulo;
     Rigidbody2D meuCorpo;
     Animator meuAnim;
 
@@ -25,7 +27,7 @@ public class PlayerScript : MonoBehaviour
 		{
 			if(Pulo == false)
 			{
-				meuCorpo.velocity += new Vector2(0, 5);
+				meuCorpo.velocity += new Vector2(0, forçaDoPulo);
 				Pulo = true;
 			}
 		}
@@ -44,5 +46,12 @@ public class PlayerScript : MonoBehaviour
     void OnCollisionEnter2D(Collision2D outroObjeto)
 	{
 		Pulo = false;
+
+        // Colisões - Morrer 
+        if (outroObjeto.collider.tag == "Inimigo")
+        {
+            //Reinicia a mesma cena
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
 	}
 }
