@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Pontos
   - Inimigo
+  - Parede
   layers:
   - Default
   - TransparentFX
