@@ -21,23 +21,8 @@ public class InimigoMovimento : MonoBehaviour
     {
         //fazendo andar
         myRigidbody.velocity = new Vector3(direcao * velocidade * Time.deltaTime , myRigidbody.velocity.y);
+        myAnimator.SetInteger("velocidade", Mathf.RoundToInt(myRigidbody.velocity.x));
 
-        //fazendo girar quando bater na parede
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right * direcao, 0.6f);
-        
-        if (hit.collider != null && hit.collider.tag != "Player")
-        {
-            direcao *= -1;
-
-            if(transform.rotation.y == 0)
-            {
-                transform.rotation = new Quaternion(0, 180, 0, 0);
-            }else
-            {
-                transform.rotation = new Quaternion(0, 0, 0, 0);
-
-            }
-
-        }
     }
+
 }

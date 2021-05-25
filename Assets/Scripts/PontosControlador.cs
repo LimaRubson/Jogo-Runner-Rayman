@@ -16,7 +16,7 @@ public class PontosControlador : MonoBehaviour
         {
             pontos++;
             textoPontos.text = pontos.ToString();
-
+            PlayerPrefs.SetFloat("TotalPontos", pontos);
             Destroy(objeto.gameObject);
         }
 

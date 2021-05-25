@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerScript : MonoBehaviour
 {
@@ -52,6 +53,11 @@ public class PlayerScript : MonoBehaviour
         {
             //Reinicia a mesma cena
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+
+        if (outroObjeto.collider.tag == "BandeiraAzul")
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("RESULTADO");
         }
 	}
 }

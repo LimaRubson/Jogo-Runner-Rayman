@@ -7,6 +7,7 @@ TagManager:
   - Pontos
   - Inimigo
   - Parede
+  - BandeiraAzul
   layers:
   - Default
   - TransparentFX
