@@ -32,6 +32,20 @@ public class TiroScript : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (collision.transform.CompareTag("Player"))
+        {
+            if (!Amigo)
+            {
+                //collision.SendMessage("perderVida", Dano);
+                Destroy(this.gameObject);
+            }
+        }else if (collision.transform.CompareTag("Inimigo"))
+        {
+            if (Amigo)
+            {
+                //collision.SendMessage("perderVida", Dano);
+                Destroy(this.gameObject);
+            }
+        }
     }
 }

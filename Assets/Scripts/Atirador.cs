@@ -5,17 +5,13 @@ using UnityEngine.UI;
 
 public class Atirador : MonoBehaviour {
 
-
-    [Header("Atirar para Cima")]
+    [Header("Atirar para direita")]
     public GameObject Tiro;
     public float direcao;
     public bool automatico;
     public float tempo;
     public KeyCode tecla;
     float timer;
-
-
-
 
     private void Update()
     {
@@ -38,10 +34,8 @@ public class Atirador : MonoBehaviour {
            
     }
 
-
     public void Atirar()
     {
-
         GameObject tiro = Instantiate(Tiro, transform.position,Quaternion.identity);
 
         tiro.transform.Rotate(0, 0, direcao,Space.World);
@@ -52,9 +46,4 @@ public class Atirador : MonoBehaviour {
 
         }
     }
-   
-
-
-
-
 }

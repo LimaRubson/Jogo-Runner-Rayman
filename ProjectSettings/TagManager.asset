@@ -8,6 +8,8 @@ TagManager:
   - Inimigo
   - Parede
   - BandeiraAzul
+  - Tiro
+  - Bala
   layers:
   - Default
   - TransparentFX
