@@ -55,6 +55,11 @@ public class PlayerScript : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
+        if (outroObjeto.collider.tag == "Nivel2")
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("level2");
+        }
+
         if (outroObjeto.collider.tag == "BandeiraAzul")
         {
             UnityEngine.SceneManagement.SceneManager.LoadScene("RESULTADO");

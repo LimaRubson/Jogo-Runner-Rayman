@@ -10,6 +10,7 @@ TagManager:
   - BandeiraAzul
   - Tiro
   - Bala
+  - Nivel2
   layers:
   - Default
   - TransparentFX

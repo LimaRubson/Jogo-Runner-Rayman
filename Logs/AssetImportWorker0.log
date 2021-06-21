@@ -15,11 +15,11 @@ C:/Users/codeb/Desktop/Arquivos/Curso Jogos Digitais/Jogo-Runner-Rayman
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-56766
+49777
 Successfully changed project path to: C:/Users/codeb/Desktop/Arquivos/Curso Jogos Digitais/Jogo-Runner-Rayman
 C:/Users/codeb/Desktop/Arquivos/Curso Jogos Digitais/Jogo-Runner-Rayman
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 438.26 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 305.47 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.5f1 (3737af19df53)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.5f1/Editor/Data/Resources/UnitySubsystems
@@ -35,160 +35,43 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.5f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.5f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56812
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56772
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.005013 seconds.
+Registered in 0.003596 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 311.20 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 237.52 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  5.303 seconds
+- Completed reload, in  4.005 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.007705 seconds.
+Registered in 0.008991 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\codeb\Desktop\Arquivos\Curso Jogos Digitais\Jogo-Runner-Rayman\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\codeb\Desktop\Arquivos\Curso Jogos Digitais\Jogo-Runner-Rayman\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 317.39 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 242.69 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.921 seconds
+- Completed reload, in  2.871 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.39 seconds
-Refreshing native plugins compatible for Editor in 2.77 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 1.26 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3379 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3380 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 128.0 MB.
 System memory in use after: 128.2 MB.
 
-Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 3838.
-Total: 10.904000 ms (FindLiveObjects: 0.886100 ms CreateObjectMapping: 0.748900 ms MarkObjects: 8.946900 ms  DeleteObjects: 0.317300 ms)
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 3839.
+Total: 5.540600 ms (FindLiveObjects: 0.513000 ms CreateObjectMapping: 0.400100 ms MarkObjects: 4.511900 ms  DeleteObjects: 0.113300 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Scenes
-  artifactKey: Guid(14a27c9c76e8a7f41a20738bedb658e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(14a27c9c76e8a7f41a20738bedb658e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ec920971f372cd8d7d565981c5b65ae') in 0.090957 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.190346 seconds.
   path: Assets/Scenes/Level2.unity
   artifactKey: Guid(a8422f597a0916a439343895433af2af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Level2.unity using Guid(a8422f597a0916a439343895433af2af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d32d7f4617ec2a1692b0a3d637b45f1') in 0.082036 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 25.441188 seconds.
-  path: Assets/Scenes/Level1.unity
-  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Level1.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd27be9ab71028992cff7bbf58ae2149') in 0.027006 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 884.826914 seconds.
-  path: Assets/Scenes/Level1.unity
-  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Level1.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59ec8bf87416f9ea2b7731f94b67d39e') in 0.005278 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 22.118132 seconds.
-  path: Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Square.png
-  artifactKey: Guid(311925a002f4447b3a28927169b83ea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Square.png using Guid(311925a002f4447b3a28927169b83ea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d239797577428fc8542c2b9c3cf682a') in 0.467268 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.946598 seconds.
-  path: Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/9Sliced.png
-  artifactKey: Guid(8884154dfe85442a3a3578be807dbcdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/9Sliced.png using Guid(8884154dfe85442a3a3578be807dbcdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '332cd449603e9f1c42a365cb80afc454') in 0.078392 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000467 seconds.
-  path: Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Capsule.png
-  artifactKey: Guid(207ee8102dd4143d288186ef0be518ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Capsule.png using Guid(207ee8102dd4143d288186ef0be518ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1207fe34aab33906b8433d2bc1f1c8cd') in 0.090625 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000705 seconds.
-  path: Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/HexagonPointedTop.png
-  artifactKey: Guid(5aa8b770bc43046bc8d993d0d5b7f4a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/HexagonPointedTop.png using Guid(5aa8b770bc43046bc8d993d0d5b7f4a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a98d928cd0f95ad86ce40befdb18226a') in 0.075851 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000579 seconds.
-  path: Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Circle.png
-  artifactKey: Guid(a86470a33a6bf42c4b3595704624658b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Circle.png using Guid(a86470a33a6bf42c4b3595704624658b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f9ba5255281097832eb5712f08a4f74') in 0.119538 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000508 seconds.
-  path: Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/HexagonFlatTop.png
-  artifactKey: Guid(b670ab75dde984907b8570040daa08c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/HexagonFlatTop.png using Guid(b670ab75dde984907b8570040daa08c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af2e682c931ddacebcc33f60c3dc9d53') in 0.085922 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000588 seconds.
-  path: Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/IsometricDiamond.png
-  artifactKey: Guid(19fb86013d8c24d6cb8410c0aadf30fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/IsometricDiamond.png using Guid(19fb86013d8c24d6cb8410c0aadf30fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '137be0a09241085d41bd73d2ca6be233') in 0.094358 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.009740 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\codeb\Desktop\Arquivos\Curso Jogos Digitais\Jogo-Runner-Rayman\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\codeb\Desktop\Arquivos\Curso Jogos Digitais\Jogo-Runner-Rayman\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.65 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.295 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.12 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3376 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 134.6 MB.
-System memory in use after: 134.9 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3961.
-Total: 6.097900 ms (FindLiveObjects: 0.550200 ms CreateObjectMapping: 0.378100 ms MarkObjects: 5.100800 ms  DeleteObjects: 0.066500 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 285.426709 seconds.
-  path: Assets/Scenes/Level1.unity
-  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Level1.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fce87011d7cc84d3c969b70c80f7a273') in 0.084378 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3079.045779 seconds.
-  path: Assets/Sprites/sandMid.png
-  artifactKey: Guid(eac546801003db84c809d01ee8c34876) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/sandMid.png using Guid(eac546801003db84c809d01ee8c34876) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee237a1c650b67eead3dc79a41940f73') in 0.660922 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 488.901951 seconds.
-  path: Assets/Sprites/liquidWaterTop.png
-  artifactKey: Guid(cd564797a3d94a844a74c859e3328bc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/liquidWaterTop.png using Guid(cd564797a3d94a844a74c859e3328bc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3af4197915595dfd58f9003c85cd4fc') in 0.080063 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 230.319633 seconds.
-  path: Assets/Sprites/cactus.png
-  artifactKey: Guid(eab966291d9d2a440ba923813db25ceb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/cactus.png using Guid(eab966291d9d2a440ba923813db25ceb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57412e2cd25e74001b873443780427a3') in 0.095572 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 111.771375 seconds.
-  path: Assets/Sprites/fishSwim1.png
-  artifactKey: Guid(b47e0aa17e78bdb4ab365f2ef5aea377) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/fishSwim1.png using Guid(b47e0aa17e78bdb4ab365f2ef5aea377) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d088b45cc445595e699e4eecbd05439') in 0.029986 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 31.411047 seconds.
-  path: Assets/Sprites/snailWalk2.png
-  artifactKey: Guid(7588ea856b2de814f95555cf6c09d51d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/snailWalk2.png using Guid(7588ea856b2de814f95555cf6c09d51d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7b06129f1348cd9fb062687a892135b') in 0.026610 seconds 
+Start importing Assets/Scenes/Level2.unity using Guid(a8422f597a0916a439343895433af2af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '467c64435fe2e6c478286b86dd75a6d9') in 0.040183 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
