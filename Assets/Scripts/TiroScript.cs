@@ -7,6 +7,7 @@ public class TiroScript : MonoBehaviour {
     public float velocidade;
     public bool Amigo;
     public int Dano;
+    public float tiro;
     Rigidbody2D myrig;
 
 	// Use this for initialization
@@ -14,7 +15,6 @@ public class TiroScript : MonoBehaviour {
 
        transform.SetParent(null);
        myrig = GetComponent<Rigidbody2D>();
-        
 	}
 	
 	// Update is called once per frame
@@ -44,6 +44,8 @@ public class TiroScript : MonoBehaviour {
             if (Amigo)
             {
                 //collision.SendMessage("perderVida", Dano);
+                tiro = 1;
+                PlayerPrefs.SetFloat("Tiro", tiro);
                 Destroy(this.gameObject);
             }
         }

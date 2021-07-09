@@ -6,7 +6,13 @@ using UnityEngine.UI;
 public class PontosControlador : MonoBehaviour
 {
     public Text textoPontos;
-    public int pontos = 0;
+    private float pontosA = 0;
+
+    // Update is called once per frame
+    void Update()
+    {
+        pontosA = PlayerPrefs.GetFloat("TotalPontos");
+    }
 
     // Colisões por Trigger -  Ganhar pontos
     void OnTriggerEnter2D(Collider2D objeto)
@@ -14,9 +20,9 @@ public class PontosControlador : MonoBehaviour
 
         if (objeto.tag == "Pontos")
         {
-            pontos++;
-            textoPontos.text = pontos.ToString();
-            PlayerPrefs.SetFloat("TotalPontos", pontos);
+            pontosA += 1;
+            textoPontos.text = pontosA.ToString();
+            PlayerPrefs.SetFloat("TotalPontos", pontosA);
             Destroy(objeto.gameObject);
         }
 
