@@ -60,6 +60,11 @@ public class PlayerScript : MonoBehaviour
             UnityEngine.SceneManagement.SceneManager.LoadScene("level2");
         }
 
+        if (outroObjeto.collider.tag == "Nivel3")
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("level3");
+        }
+
         if (outroObjeto.collider.tag == "BandeiraAzul")
         {
             UnityEngine.SceneManagement.SceneManager.LoadScene("RESULTADO");

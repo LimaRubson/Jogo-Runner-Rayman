@@ -709,6 +709,7 @@ GameObject:
   - component: {fileID: 897773845}
   - component: {fileID: 897773844}
   - component: {fileID: 897773843}
+  - component: {fileID: 897773846}
   m_Layer: 5
   m_Name: ButtonCredits
   m_TagString: Untagged
@@ -779,7 +780,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 897773844}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 897773846}
+        m_TargetAssemblyTypeName: ButtonCreditos, Assembly-CSharp
+        m_MethodName: OnButtonPress
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &897773844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -818,6 +831,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 897773841}
   m_CullTransparentMesh: 1
+--- !u!114 &897773846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897773841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1d18a34048d68c458aee7582d85c13b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &934892940
 GameObject:
   m_ObjectHideFlags: 0
@@ -1173,6 +1198,7 @@ GameObject:
   - component: {fileID: 2017803886}
   - component: {fileID: 2017803885}
   - component: {fileID: 2017803884}
+  - component: {fileID: 2017803887}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1245,3 +1271,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2017803887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2017803883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a712b50cede05f4428d1bacdc5b1d09a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vida: 3

@@ -18,6 +18,6 @@ public class ClickPlay : MonoBehaviour
     }
 
     public void OnButtonPress() {
-       UnityEngine.SceneManagement.SceneManager.LoadScene("SampleScene");
+       UnityEngine.SceneManagement.SceneManager.LoadScene("Level1");
     }
 }
