@@ -2,20 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InimigoMovimento : MonoBehaviour
+public class InimigoMovimento4 : MonoBehaviour
 {
     Rigidbody2D myRigidbody;
     Animator myAnimator;
     public float velocidade;
     int direcao = -1;
     private float tiroA = 0;
-
     // Start is called before the first frame update
     void Start()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();   
-        PlayerPrefs.SetFloat("Tiro1", tiroA); 
+        PlayerPrefs.SetFloat("Tiro5", tiroA);
     }
 
     // Update is called once per frame
@@ -24,11 +23,10 @@ public class InimigoMovimento : MonoBehaviour
         //fazendo andar
         myRigidbody.velocity = new Vector3(direcao * velocidade * Time.deltaTime , myRigidbody.velocity.y);
         myAnimator.SetInteger("velocidade", Mathf.RoundToInt(myRigidbody.velocity.x));
-        tiroA = PlayerPrefs.GetFloat("Tiro1");
-        if(tiroA == 1) {
+        tiroA = PlayerPrefs.GetFloat("Tiro5");
+        if(tiroA == 4) {
             Debug.Log("Morreu");
             Destroy(this.gameObject);
         }
     }
-
 }

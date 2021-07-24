@@ -27,7 +27,7 @@ public class VidaControlador : MonoBehaviour
     void OnCollisionEnter2D(Collision2D outroObjeto)
 	{
 
-        if (outroObjeto.collider.tag == "Inimigo")
+        if (outroObjeto.collider.tag == "Inimigo" || outroObjeto.collider.tag == "Inimigo1" || outroObjeto.collider.tag == "Inimigo2" || outroObjeto.collider.tag == "Inimigo3" || outroObjeto.collider.tag == "Inimigo4")
         {
             vidaA -= 1;
             textoVida.text = vidaA.ToString();

@@ -491,7 +491,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 303037019}
-        m_TargetAssemblyTypeName: ClickPlay, Assembly-CSharp
+        m_TargetAssemblyTypeName: ClickObj1, Assembly-CSharp
         m_MethodName: OnButtonPress
         m_Mode: 1
         m_Arguments:
@@ -549,7 +549,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 303037014}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b5797592a0f64946afeea3faae17fc3, type: 3}
+  m_Script: {fileID: 11500000, guid: 617ce6ae4e4e4914c87a241ae189c6a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &564424098

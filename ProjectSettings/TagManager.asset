@@ -12,6 +12,10 @@ TagManager:
   - Bala
   - Nivel2
   - Nivel3
+  - Inimigo1
+  - Inimigo2
+  - Inimigo3
+  - Inimigo4
   layers:
   - Default
   - TransparentFX

@@ -9,6 +9,7 @@ public class PlayerScript : MonoBehaviour
     public float Velocidade = 2;
     public bool Pulo;
     public float forçaDoPulo;
+    private float pontosA = 0;
     Rigidbody2D meuCorpo;
     Animator meuAnim;
 
@@ -22,6 +23,7 @@ public class PlayerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        pontosA = PlayerPrefs.GetFloat("TotalPontos");
         float velX = Input.GetAxisRaw("Horizontal");		
         meuCorpo.velocity = new Vector2(velX * Velocidade, meuCorpo.velocity.y);
         if(Input.GetKeyDown("space"))
@@ -49,13 +51,13 @@ public class PlayerScript : MonoBehaviour
 		Pulo = false;
 
         // Colisões - Morrer 
-        if (outroObjeto.collider.tag == "Inimigo")
+        if (outroObjeto.collider.tag == "Inimigo" || outroObjeto.collider.tag == "Inimigo1" || outroObjeto.collider.tag == "Inimigo2" || outroObjeto.collider.tag == "Inimigo3" || outroObjeto.collider.tag == "Inimigo4")
         {
             //Reinicia a mesma cena
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
-        if (outroObjeto.collider.tag == "Nivel2")
+        if (outroObjeto.collider.tag == "Nivel2" && pontosA > 29)
         {
             UnityEngine.SceneManagement.SceneManager.LoadScene("level2");
         }
