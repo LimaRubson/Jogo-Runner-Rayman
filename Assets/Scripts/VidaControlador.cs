@@ -18,6 +18,7 @@ public class VidaControlador : MonoBehaviour
     void Update()
     {
         vidaA = PlayerPrefs.GetFloat("TotalVida");
+        textoVida.text = vidaA.ToString();
         if(vidaA == 0) {
             UnityEngine.SceneManagement.SceneManager.LoadScene("Game Over");
         }

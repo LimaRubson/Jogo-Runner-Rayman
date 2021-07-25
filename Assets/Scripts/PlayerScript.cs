@@ -7,9 +7,11 @@ using UnityEngine.UI;
 public class PlayerScript : MonoBehaviour
 {
     public float Velocidade = 2;
+    private float num = 0;
     public bool Pulo;
     public float forçaDoPulo;
     private float pontosA = 0;
+    private float vidaA = 3;
     Rigidbody2D meuCorpo;
     Animator meuAnim;
 
@@ -23,7 +25,13 @@ public class PlayerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        vidaA = PlayerPrefs.GetFloat("TotalVida");
         pontosA = PlayerPrefs.GetFloat("TotalPontos");
+        if(pontosA == 60 && num == 0) {
+            num = 1;
+            vidaA += 3;
+            PlayerPrefs.SetFloat("TotalVida", vidaA);
+        }
         float velX = Input.GetAxisRaw("Horizontal");		
         meuCorpo.velocity = new Vector2(velX * Velocidade, meuCorpo.velocity.y);
         if(Input.GetKeyDown("space"))
@@ -59,7 +67,7 @@ public class PlayerScript : MonoBehaviour
 
         if (outroObjeto.collider.tag == "Nivel2" && pontosA > 29)
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene("level2");
+            UnityEngine.SceneManagement.SceneManager.LoadScene("ObjetivosNivel2");
         }
 
         if (outroObjeto.collider.tag == "Nivel3")
