@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Pontos : MonoBehaviour
 {
-    public float pontos = 0;
+    public float pontosTotalFases = 0;
     // Start is called before the first frame update
     void Start()
     {
-        PlayerPrefs.SetFloat("TotalPontos", pontos);
+        PlayerPrefs.SetFloat("TotalPontosFases", pontosTotalFases);
     }
 
     // Update is called once per frame

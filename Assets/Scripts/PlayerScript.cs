@@ -12,6 +12,9 @@ public class PlayerScript : MonoBehaviour
     public float forçaDoPulo;
     private float pontosA = 0;
     private float vidaA = 3;
+    private float bonusFase1 = 0;
+    private float bonusFase2 = 0;
+    private float bonusFase3 = 0;
     Rigidbody2D meuCorpo;
     Animator meuAnim;
 
@@ -27,7 +30,16 @@ public class PlayerScript : MonoBehaviour
     {
         vidaA = PlayerPrefs.GetFloat("TotalVida");
         pontosA = PlayerPrefs.GetFloat("TotalPontos");
+        bonusFase1 = PlayerPrefs.GetFloat("BonusFase1");
+        bonusFase2 = PlayerPrefs.GetFloat("BonusFase2");
+        bonusFase3 = PlayerPrefs.GetFloat("BonusFase3");
+        
         if(pontosA == 60 && num == 0) {
+            num = 1;
+            vidaA += 3;
+            PlayerPrefs.SetFloat("TotalVida", vidaA);
+        }
+        if(pontosA == 100 && num == 0) {
             num = 1;
             vidaA += 3;
             PlayerPrefs.SetFloat("TotalVida", vidaA);
@@ -70,7 +82,7 @@ public class PlayerScript : MonoBehaviour
             UnityEngine.SceneManagement.SceneManager.LoadScene("ObjetivosNivel2");
         }
 
-        if (outroObjeto.collider.tag == "Nivel3")
+        if (outroObjeto.collider.tag == "Nivel3" && pontosA > 99)
         {
             UnityEngine.SceneManagement.SceneManager.LoadScene("level3");
         }
