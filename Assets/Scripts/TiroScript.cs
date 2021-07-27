@@ -68,6 +68,21 @@ public class TiroScript : MonoBehaviour {
                 tiro = 5;
                 PlayerPrefs.SetFloat("Tiro5", tiro);
                 Destroy(this.gameObject);
+        } else if(collision.transform.CompareTag("Inimigo5")) {
+                //collision.SendMessage("perderVida", Dano);
+                tiro = 6;
+                PlayerPrefs.SetFloat("Tiro6", tiro);
+                Destroy(this.gameObject);
+        } else if(collision.transform.CompareTag("Inimigo6")) {
+                //collision.SendMessage("perderVida", Dano);
+                tiro = 7;
+                PlayerPrefs.SetFloat("Tiro7", tiro);
+                Destroy(this.gameObject);
+        } else if(collision.transform.CompareTag("Inimigo7")) {
+                //collision.SendMessage("perderVida", Dano);
+                tiro = 8;
+                PlayerPrefs.SetFloat("Tiro8", tiro);
+                Destroy(this.gameObject);
         }
     }
 }

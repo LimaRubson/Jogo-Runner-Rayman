@@ -16,7 +16,7 @@ public class TotalPontos : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        totalPontos = PlayerPrefs.GetFloat("pontosTotalFases");
+        totalPontos = PlayerPrefs.GetFloat("SomaPontosFases");
         GetComponent<Text>().text = "Total de Coins Gold: " + totalPontos;
     }
 }

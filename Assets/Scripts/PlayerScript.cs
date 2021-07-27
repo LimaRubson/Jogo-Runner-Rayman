@@ -34,13 +34,21 @@ public class PlayerScript : MonoBehaviour
         bonusFase2 = PlayerPrefs.GetFloat("BonusFase2");
         bonusFase3 = PlayerPrefs.GetFloat("BonusFase3");
         
-        if(pontosA == 60 && num == 0) {
-            num = 1;
+        if(pontosA == 60 && bonusFase1 == 1) {
+            bonusFase1 = 10;
+            PlayerPrefs.SetFloat("BonusFase1", bonusFase1);
             vidaA += 3;
             PlayerPrefs.SetFloat("TotalVida", vidaA);
         }
-        if(pontosA == 100 && num == 0) {
-            num = 1;
+        if(pontosA == 170 && bonusFase2 == 2) {
+            bonusFase2 = 11;
+            PlayerPrefs.SetFloat("BonusFase2", bonusFase2);
+            vidaA += 3;
+            PlayerPrefs.SetFloat("TotalVida", vidaA);
+        }
+        if(pontosA == 250 && bonusFase3 == 3) {
+            bonusFase3 = 12;
+            PlayerPrefs.SetFloat("BonusFase3", bonusFase3);
             vidaA += 3;
             PlayerPrefs.SetFloat("TotalVida", vidaA);
         }
@@ -71,7 +79,7 @@ public class PlayerScript : MonoBehaviour
 		Pulo = false;
 
         // Colisões - Morrer 
-        if (outroObjeto.collider.tag == "Inimigo" || outroObjeto.collider.tag == "Inimigo1" || outroObjeto.collider.tag == "Inimigo2" || outroObjeto.collider.tag == "Inimigo3" || outroObjeto.collider.tag == "Inimigo4")
+        if (outroObjeto.collider.tag == "Inimigo" || outroObjeto.collider.tag == "Inimigo1" || outroObjeto.collider.tag == "Inimigo2" || outroObjeto.collider.tag == "Inimigo3" || outroObjeto.collider.tag == "Inimigo4" || outroObjeto.collider.tag == "Inimigo5" || outroObjeto.collider.tag == "Inimigo6" || outroObjeto.collider.tag == "Inimigo7")
         {
             //Reinicia a mesma cena
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
@@ -84,10 +92,10 @@ public class PlayerScript : MonoBehaviour
 
         if (outroObjeto.collider.tag == "Nivel3" && pontosA > 99)
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene("level3");
+            UnityEngine.SceneManagement.SceneManager.LoadScene("ObjetivosNivel3");
         }
 
-        if (outroObjeto.collider.tag == "BandeiraAzul")
+        if (outroObjeto.collider.tag == "BandeiraAzul" && pontosA > 150)
         {
             UnityEngine.SceneManagement.SceneManager.LoadScene("RESULTADO");
         }

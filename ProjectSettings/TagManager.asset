@@ -16,6 +16,9 @@ TagManager:
   - Inimigo2
   - Inimigo3
   - Inimigo4
+  - Inimigo5
+  - Inimigo6
+  - Inimigo7
   layers:
   - Default
   - TransparentFX
